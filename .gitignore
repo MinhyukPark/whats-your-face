@@ -3,3 +3,4 @@ docs/html
 docs/latex
 docs/sphinx/_build
 .vs/
+CMakeSettings.json

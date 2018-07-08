@@ -8,8 +8,7 @@ set_property (GLOBAL PROPERTY USE_FOLDERS ON)
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/externals/sanitizers-cmake/cmake" ${CMAKE_MODULE_PATH})
 find_package (Sanitizers)
 
-set (CMAKE_CXX_FLAGES_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /W4")
-set (CMAKE_CXX_FLAGES_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
+set (CMAKE_CXX_FLAGES "${CMAKE_CXX_FLAGS_RELEASE} /W4")
 
 
 message ("using flags:" ${CMAKE_CXX_FLAGS})
