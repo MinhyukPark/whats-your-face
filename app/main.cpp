@@ -1,3 +1,10 @@
+/**
+ * @file main.cpp
+ * @author Minhyuk Park
+ * @date 8 Jul 2018
+ * @brief File with int main
+ */
+
 #include <iostream>
 #include <cstring>
 
