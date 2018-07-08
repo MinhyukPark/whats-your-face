@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
         }
     } else {
         fprintf(stderr, "%s", "no arguments given");
+        return 1;
     }
-	system("pause");
     return 0;
 }
