@@ -17,6 +17,8 @@ later on in How To Build section.
 If the standard development tools such as c/c++ compilers are not available,
 e.g. developing in Windows, then here are some things you can try.
 
+For handling and processing images OpenCV (3.4 >=)  is required.
+
 #### Windows without Visual Studio 2017
 Download cmake.
 Download MinGW and remember the install directory. (The default is C:\MinGW).
@@ -61,6 +63,14 @@ Select Build and then All.
 
 
 ### Unix Based Environment
+Please note that the 'create\_release' command is a simple
+bash script and one is free to use whichever set of commands
+that will achieve the same result.
+
+Similarly, 'create\_debug' and 'clean\_build' are provided
+with the functionality of creating the debug build and cleaning
+up the build. Think of them as make debug and make clean respectively.
+
 ```
 cd to_cloned_repo
 git submodule update --remote --merge
