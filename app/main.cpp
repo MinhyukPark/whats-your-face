@@ -6,9 +6,10 @@
  */
 
 #include <iostream>
-#include <cstring>
+#include <string>
 
 #include "ml.h"
+#include "face.h"
 
 int main(int argc, char *argv[]) {
     if(argc >= 2) {
@@ -18,8 +19,13 @@ int main(int argc, char *argv[]) {
             std::cout << import_test << std::endl;
         }
     } else {
-        fprintf(stderr, "%s", "no arguments given");
+        std::cout << "no arguments given" << std::endl;
         return 1;
     }
+    std::string filepath(argv[2]);
+    Face test_face;
+    test_face.import_image(filepath);
+    ML test_ml;
+    test_ml.classify_face(test_face); 
     return 0;
 }
