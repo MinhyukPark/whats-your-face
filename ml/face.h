@@ -1,3 +1,10 @@
+/**
+ * @file face.h
+ * @author Minhyuk Park
+ * @date 10 Jul 2018
+ * @brief header file for Face class
+ */
+
 #ifndef FACE_H
 #define FACE_H
 
@@ -6,6 +13,13 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+/**
+ * @brief Face class
+ * This class is a container for opencv Mat
+ * with custom defined functions that are better
+ * suited for the specific task of classifying
+ * faceshapes.
+ */ 
 class Face {
     public:
         void import_image(const std::string & filepath);
